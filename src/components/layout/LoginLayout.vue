@@ -1,13 +1,15 @@
 <template>
   <v-app>
     <v-content>
-      <v-col align="center" justify="center">
+      <v-col align="center" justify="center" class="login-container primary white--text">
         <div>
-          <img src="@/assets/logo.png" />
+          <v-avatar color="teal" size="12rem">
+            <img src="@/assets/cerebro.svg" />
+          </v-avatar>
           <h2 class="mb-5">Cognirewars</h2>
           <v-row align="center" justify="center">
-            <v-btn class="mr-3" small color="Primary"> Soy Estudiante</v-btn>
-            <v-btn small color="Primary"> Soy Profesor</v-btn>
+            <v-btn class="mr-3" small color="Primary">Soy Estudiante</v-btn>
+            <v-btn small color="Primary">Soy Profesor</v-btn>
           </v-row>
         </div>
         <router-view />

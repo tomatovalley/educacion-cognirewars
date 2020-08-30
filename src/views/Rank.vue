@@ -1,8 +1,13 @@
 <template>
-  <v-card class="mt-10 mx-auto text-center" color="red" dark max-width="1000">
+  <v-card
+    class="mt-10 mx-auto text-center"
+    color="accent"
+    dark
+    max-width="1000"
+  >
     <v-card-text>
-      <h1 class="mt-20 mb-6">Ranking</h1>
-      <v-sheet color="rgba(215, 60, 71, 1)">
+      <h1 class="mt-20 mb-6 info--text">Ranking</h1>
+      <v-sheet color="primary">
         <v-sparkline
           :value="value"
           color="rgba(255, 255, 255, .7)"
@@ -17,7 +22,7 @@
     </v-card-text>
 
     <v-card-text>
-      <div class="display-1 font-weight-thin">
+      <div class="display-1 font-weight-thin info--text">
         Top de los mejores grupos en Instituto Cumbres
       </div>
     </v-card-text>

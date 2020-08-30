@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-appBar app color="white" absolute>
-      <v-toolbar>
-        <v-toolbar-title> Cognirewars </v-toolbar-title>
-      </v-toolbar>
+      <v-container fluid>
+        <h3 class="info--text">Cognirewars</h3>
+      </v-container>
     </v-appBar>
     <v-content>
       <v-col align="center" justify="center" class="info--text">
@@ -15,6 +15,6 @@
 
 <script>
 export default {
-  name: "ActividadLayout",
+  name: 'ActividadLayout',
 };
 </script>

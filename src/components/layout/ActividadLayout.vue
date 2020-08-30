@@ -1,12 +1,10 @@
 <template>
   <v-app>
     <v-appBar app color="white" dark absolute>
-      <div>
-        Hol
-      </div>
+      <div>Hol</div>
     </v-appBar>
     <v-content>
-      <v-col align="center" justify="center">
+      <v-col align="center" justify="center" class="info--text">
         <router-view />
       </v-col>
     </v-content>

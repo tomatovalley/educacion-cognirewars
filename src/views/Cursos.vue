@@ -40,9 +40,7 @@
             required
           ></v-text-field>
           <div class="text-center">
-            <v-btn class="mb-2" color="error" @click="submit">
-              Crear curso
-            </v-btn>
+            <v-btn class="mb-2" block color="secondary" @click="submit">Crear curso</v-btn>
           </div>
         </v-col>
       </v-row>

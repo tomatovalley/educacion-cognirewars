@@ -30,12 +30,12 @@
             required
           ></v-text-field>
           <div class="text-center">
-            <v-btn class="mr-4" color="error" @click="submit">
+            <v-btn class="mb-2" color="error" @click="submit">
               Iniciar Sesión
             </v-btn>
           </div>
           <div>
-            <p>Aún sin cuenta?</p>
+            <router-link to="/registro"> Aún sin cuenta? </router-link>
           </div>
         </v-col>
       </v-row>

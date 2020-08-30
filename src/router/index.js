@@ -5,6 +5,7 @@ import About from "../views/About.vue";
 import Registro from "../views/Registro.vue";
 import Actividades from "../views/Actividades.vue";
 import Cursos from "../views/Cursos.vue";
+import UserProfile from "../views/UserProfile.vue";
 import LoginLayout from "@/components/layout/LoginLayout.vue";
 import ActividadLayout from "@/components/layout/ActividadLayout.vue";
 
@@ -44,6 +45,11 @@ const routes = [
         component: Cursos,
       },
     ],
+  },
+  {
+    path: "/perfil",
+    name: "Perfil",
+    component: UserProfile,
   },
   {
     path: "/about",

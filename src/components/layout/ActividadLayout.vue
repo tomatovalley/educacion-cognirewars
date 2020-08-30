@@ -2,7 +2,7 @@
   <v-app>
     <v-appBar app color="white" dark absolute>
       <div>
-        Hol
+        hola
       </div>
     </v-appBar>
     <v-content>

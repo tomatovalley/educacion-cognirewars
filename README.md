@@ -1,4 +1,6 @@
-# Equipo TU_EQUIPO
+# Equipo Team CogniRewars
+
+Cognirewars es una plataforma web de gamificación para incentivar la entrega de actividades en entornos escolares.
 
 Aquí deberás escribir toda la información de tu proyecto.
 

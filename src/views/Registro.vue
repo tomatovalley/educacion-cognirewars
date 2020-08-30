@@ -3,8 +3,8 @@
     <v-container class="fill-height" fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" sm="8" md="6" lg="4">
-          <div>
-            <p>Inicia tu aventura</p>
+          <div class="mb-2">
+            <h3 class="text-left">Inicia tu aventura</h3>
           </div>
 
           <v-text-field
@@ -23,14 +23,7 @@
             solo
             required
           ></v-text-field>
-          <v-text-field
-            v-model="email"
-            label="Email"
-            placeholder="Email"
-            single-line
-            solo
-            required
-          ></v-text-field>
+          <v-text-field v-model="email" label="Email" placeholder="Email" single-line solo required></v-text-field>
 
           <v-text-field
             v-model="password"
@@ -47,13 +40,16 @@
             required
           ></v-text-field>
           <div class="text-center">
-            <v-btn class="mb-2" color="error" @click="submit">
-              Crear cuenta
-            </v-btn>
+            <v-btn class="mb-2" block color="secondary" @click="submit">Crear cuenta</v-btn>
           </div>
-          <div>
-            <router-link to="/login"> Ya tengo cuenta </router-link>
-          </div>
+          <v-row class="mt-2">
+            <p class="mx-auto">
+              Ya tengo cuenta ·
+              <router-link to="/login">
+                <span class="secondary--text">Iniciar sesión</span>
+              </router-link>
+            </p>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>

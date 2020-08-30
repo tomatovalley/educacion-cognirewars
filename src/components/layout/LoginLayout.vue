@@ -6,7 +6,7 @@
           <v-avatar color="teal" size="12rem">
             <img src="@/assets/cerebro.svg" />
           </v-avatar>
-          <h2 class="mb-5">Cognirewars</h2>
+          <h1 class="mb-5">Cognirewars</h1>
           <v-row align="center" justify="center">
             <v-btn class="mr-3" small color="Primary">Soy Estudiante</v-btn>
             <v-btn small color="Primary">Soy Profesor</v-btn>

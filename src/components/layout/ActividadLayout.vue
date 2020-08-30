@@ -6,7 +6,7 @@
       </v-toolbar>
     </v-appBar>
     <v-content>
-      <v-col align="center" justify="center">
+      <v-col align="center" justify="center" class="info--text">
         <router-view />
       </v-col>
     </v-content>

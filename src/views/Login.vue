@@ -1,11 +1,11 @@
 <template>
   <v-form ref="form" v-model="valid" lazy-validation>
-    <v-container class="p-2">
-      <v-column>
-        <div>
-          <p>Inicia tu aventura</p>
-        </div>
-        <v-col cols="12">
+    <v-container class="fill-height" fluid>
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="8" md="6" lg="4">
+          <div>
+            <p>Inicia tu aventura</p>
+          </div>
           <v-text-field
             v-model="email"
             label="Email"
@@ -14,9 +14,7 @@
             solo
             required
           ></v-text-field>
-        </v-col>
 
-        <v-col cols="12">
           <v-text-field
             v-model="password"
             :append-icon="show3 ? 'mdi-eye' : 'mdi-eye-off'"
@@ -31,13 +29,16 @@
             solo
             required
           ></v-text-field>
+          <div class="text-center">
+            <v-btn class="mr-4" color="error" @click="submit">
+              Iniciar Sesión
+            </v-btn>
+          </div>
+          <div>
+            <p>Aún sin cuenta?</p>
+          </div>
         </v-col>
-        <div class="text-center">
-          <v-btn class="mr-4" color="error" @click="submit">
-            Iniciar Sesión
-          </v-btn>
-        </div>
-      </v-column>
+      </v-row>
     </v-container>
   </v-form>
 </template>

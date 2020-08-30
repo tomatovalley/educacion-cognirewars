@@ -1,7 +1,9 @@
 <template>
   <v-app>
-    <v-appBar app color="white" dark absolute>
-      <div>Hol</div>
+    <v-appBar app color="white" absolute>
+      <v-toolbar>
+        <v-toolbar-title> Cognirewars </v-toolbar-title>
+      </v-toolbar>
     </v-appBar>
     <v-content>
       <v-col align="center" justify="center" class="info--text">

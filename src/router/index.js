@@ -1,10 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "../views/Login.vue";
-import About from "../views/About.vue";
 import Registro from "../views/Registro.vue";
 import Actividades from "../views/Actividades.vue";
 import Cursos from "../views/Cursos.vue";
+import UserProfile from "../views/UserProfile.vue";
+import Solicitudes from "../views/Solicitudes.vue";
+import Rank from "../views/Rank.vue";
 import LoginLayout from "@/components/layout/LoginLayout.vue";
 import ActividadLayout from "@/components/layout/ActividadLayout.vue";
 
@@ -34,6 +36,16 @@ const routes = [
     component: ActividadLayout,
     children: [
       {
+        path: "/perfil",
+        name: "Perfil",
+        component: UserProfile,
+      },
+      {
+        path: "/solicitud",
+        name: "Solicitud",
+        component: Solicitudes,
+      },
+      {
         path: "/actividad",
         name: "Actividades",
         component: Actividades,
@@ -43,12 +55,12 @@ const routes = [
         name: "Cursos",
         component: Cursos,
       },
+      {
+        path: "/ranking",
+        name: "Rank",
+        component: Rank,
+      },
     ],
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: About,
   },
 ];
 

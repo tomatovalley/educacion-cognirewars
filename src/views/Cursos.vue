@@ -2,7 +2,7 @@
   <v-form>
     <v-container class="fill-height" fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" sm="8" md="6" lg="4">
+        <v-col cols="12" sm="6" md="6" lg="4">
           <div>
             <h2 class="mb-6">Creación de curso</h2>
           </div>

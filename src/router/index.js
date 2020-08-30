@@ -6,6 +6,7 @@ import Actividades from "../views/Actividades.vue";
 import Cursos from "../views/Cursos.vue";
 import UserProfile from "../views/UserProfile.vue";
 import Solicitudes from "../views/Solicitudes.vue";
+import Rank from "../views/Rank.vue";
 import LoginLayout from "@/components/layout/LoginLayout.vue";
 import ActividadLayout from "@/components/layout/ActividadLayout.vue";
 
@@ -53,6 +54,11 @@ const routes = [
         path: "/curso",
         name: "Cursos",
         component: Cursos,
+      },
+      {
+        path: "/ranking",
+        name: "Rank",
+        component: Rank,
       },
     ],
   },

@@ -32,7 +32,11 @@
                 required
               ></v-text-field>
               <div class="text-center mt-4">
-                <v-btn color="secondary" block @click="submit">Iniciar Sesión</v-btn>
+                <router-link to="/actividad/solicitud">
+                  <v-btn color="secondary" block @click="submit"
+                    >Iniciar Sesión</v-btn
+                  >
+                </router-link>
               </div>
               <v-row class="mt-2">
                 <p class="mx-auto">
@@ -54,17 +58,17 @@
 export default {
   data() {
     return {
-      name: "",
-      email: "",
-      password: "",
-      error: "",
+      name: '',
+      email: '',
+      password: '',
+      error: '',
       show3: false,
     };
   },
-  name: "Login",
+  name: 'Login',
   methods: {
     login() {
-      this.error = "";
+      this.error = '';
     },
   },
 };

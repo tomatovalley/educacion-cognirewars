@@ -4,6 +4,7 @@ import Login from '../views/Login.vue';
 import Registro from '../views/Registro.vue';
 import Actividades from '../views/Actividades.vue';
 import Cursos from '../views/Cursos.vue';
+import DetallesCurso from '../views/DetallesCurso.vue';
 import UserProfile from '../views/UserProfile.vue';
 import Solicitudes from '../views/Solicitudes.vue';
 import Rank from '../views/Rank.vue';
@@ -59,6 +60,11 @@ const routes = [
         path: '/actividad/ranking',
         name: 'Rank',
         component: Rank,
+      },
+      {
+        path: '/actividad/detalles-curso',
+        name: 'DetallesCurso',
+        component: DetallesCurso,
       },
     ],
   },

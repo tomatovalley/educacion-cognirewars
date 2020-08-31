@@ -47,7 +47,12 @@
             required
           ></v-text-field>
           <div class="text-center">
-            <v-btn class="mb-2" color="error" @click.prevent="addRegistro()">
+            <v-btn
+              class="mb-2"
+              color="secondary"
+              block
+              @click.prevent="addRegistro()"
+            >
               Crear cuenta
             </v-btn>
           </div>
@@ -68,38 +73,37 @@
   </v-form>
 </template>
 <script>
-import Firebase from 'firebase'
-import 'firebase'
-import config from '../config'
+import Firebase from 'firebase';
+import 'firebase';
+import config from '../config';
 
-let app = Firebase.initializeApp(config)
-let db = app.database()
-let registroRef = db.ref('registro')
-
+let app = Firebase.initializeApp(config);
+let db = app.database();
+let registroRef = db.ref('registro');
 
 export default {
-  name: "registro",
-  firebase:{
-    registro: registroRef
+  name: 'registro',
+  firebase: {
+    registro: registroRef,
   },
   data: () => ({
     newRegistro: {
-      nombre: "",
-      escuela: "",
-      email: "",
-      password: ""
+      nombre: '',
+      escuela: '',
+      email: '',
+      password: '',
     },
   }),
   methods: {
-    addRegistro(){
+    addRegistro() {
       registroRef.push(this.newRegistro).then(() => {
-        console.log("Enviado con éxito");
+        console.log('Enviado con éxito');
       });
-      this.newRegistro.nombre = ''
-      this.newRegistro.escuela = ''
-      this.newRegistro.email = ''
-      this.newRegistro.password = ''
-    }
-  }
+      this.newRegistro.nombre = '';
+      this.newRegistro.escuela = '';
+      this.newRegistro.email = '';
+      this.newRegistro.password = '';
+    },
+  },
 };
 </script>
